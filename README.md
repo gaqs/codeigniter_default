@@ -14,17 +14,13 @@ Everything ready for XAMPP.
 
 
 ## .htaccess
-...
+```
 DirectoryIndex index.php
 Options -Indexes
 
 RewriteEngine On
 
-# Unconditionally rewrite everything to the "public" subdirectory
 RewriteRule (.*) public/$1 [L]
-...
+```
 
 No index.php and /public folder on the URL.
-
-
-:D
